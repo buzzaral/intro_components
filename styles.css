@@ -31,8 +31,35 @@ body {
 
 .right { 
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inner-container {
   padding: 40px 40px 40px 40px;
+}
+
+.inner-container2 {
+  padding: 40px 40px 40px 40px;
+}
+
+.trial {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  color: white;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.main-form {
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+}
+
+.inputs {
+  width: 100%;
 }
