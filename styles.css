@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Poppins);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .attribution { font-size: 11px; text-align: center; }
 
@@ -6,19 +6,25 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Poppins';
 }
 
 body {
   background-image: url('images/bg-intro-desktop.png');
   background-size: cover;
   background-color: hsl(0, 100%, 74%);
-  font-family:'poppins', sans-serif;
+  
+  font-size: 16px;
   color: white;
   margin: 0;
 }
 
-h1 { 
-  font-size: 36px;
+header { 
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 999;
+  line-height: 45px;
 }
 
 .container {
@@ -65,7 +71,7 @@ h1 {
   background-color: white;
   padding: 20px 25px 20px 25px;
   border-radius: 8px;
-  box-shadow: 0 4px 2px 0px rgba(255, 0, 0, 0.226) ;
+  box-shadow: 0 6px 2px 0px rgba(255, 0, 0, 0.226) ;
 }
 
 .inputs {
@@ -74,7 +80,8 @@ h1 {
   border-radius: 3px;
   margin: 10px 0px 10px 0px;
   padding-left: 25px;
-  border: none;
+  border: solid .1px;
+  border-color: hsl(0, 0%, 90%);
 }
 
 .claim {
@@ -84,4 +91,25 @@ h1 {
   background-color: hsl(154, 59%, 51%);
   border: 2px hsl(154, 100%, 34%);
   border-radius: 4px;
+  box-shadow: 0 2px 2px 0px hsl(154, 100%, 34%)
+}
+
+.warning {
+  font-size: 8px;
+  color:rgb(167, 161, 161);
+  display: flex;
+  justify-content: center;
+  margin: 15px 30px;
+}
+
+div a {
+  color: red;
+  text-decoration: none;
+}
+
+/* ANIMATIONS / HOVER */
+
+.claim:hover {
+  background-color: hsl(154, 59%, 70%);
+  cursor: pointer;
 }
