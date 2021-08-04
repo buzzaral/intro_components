@@ -69,6 +69,7 @@ header {
 
 .main-form {
   background-color: white;
+  position:relative;
   padding: 20px 25px 20px 25px;
   border-radius: 8px;
   box-shadow: 0 6px 2px 0px rgba(255, 0, 0, 0.226) ;
@@ -107,9 +108,44 @@ div a {
   text-decoration: none;
 }
 
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 145px;
+  right: 40px;
+  transform: translatey(55%);
+}
+
+form.error .error-icon {
+  display: block;
+}
+
+form.error .email {
+  border: solid red;
+  border-width: 1px;
+}
+
+.test {
+  display: none;
+}
+
+form.error .test {
+  display: inline;
+  font-size: 8px;
+  left: 255px;
+  text-align: right;
+  display: block;
+  color: red; 
+}
+
 /* ANIMATIONS / HOVER */
 
 .claim:hover {
   background-color: hsl(154, 59%, 70%);
+  cursor: pointer;
+}
+
+.trial:hover {
+  background-color: hsl(248, 46%, 61%);
   cursor: pointer;
 }

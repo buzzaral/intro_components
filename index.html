@@ -10,6 +10,7 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
 
+
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -31,10 +32,12 @@
         <form>
           <button class="trial"><b>Try it free 7 days</b> then $20/mo. thereafter</button>
         </form>
-        <form class="main-form">
+        <form class="main-form" id="form">
           <input class="fname inputs" placeholder="First Name" /> 
           <input class="lname inputs" placeholder="Last Name" /> 
-          <input class="email inputs" placeholder="Email Address" /> 
+          <input class="email inputs" id="email" placeholder="Email Address" />
+          <div class="test">Looks like this is not an email</div>
+          <img class="error-icon" src="./images/icon-error.svg" alt="error" />  
           <input class="password inputs" placeholder="Password" /> 
         
           <button class="claim">Claim your free trial</button> 
@@ -44,6 +47,8 @@
       </div>
     </div>
   </div> 
+
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
